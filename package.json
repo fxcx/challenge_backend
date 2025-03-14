@@ -1,0 +1,31 @@
+{
+  "name": "challenge_backend",
+  "version": "1.0.0",
+  "description": "![Estoes](assets/images/logo.png \"Esto es Agencia Digital\") # Backend challenge * Se debe crear un servicio que maneje los datos de la plataforma de gestión de proyectos. * Si bien no hay restricción de tiempo, creemos que de 3 a 5 horas es un tiempo razonable para entregarlo con calidad.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc --project tsconfig.json && tsconfig-replace-paths --project tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "dev:watch": "nodemon --exec \"tsx\" ./src/index.ts",
+    "start": "node dist/src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "tsx": "^4.19.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^5.0.0",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "nodemon": "^3.1.9",
+    "typescript": "^5.8.2"
+  }
+}
